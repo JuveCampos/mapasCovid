@@ -40,8 +40,7 @@ muni <- st_read("www/Shapes/mpios.geojson")
 
 # Info de casos ----
 list.files("www/Estados") # Ver archivos en la carpeta 
-casos <- read_csv(sort(list.files("www/Estados"))[length(list.files("www/Estados"))])
-
+casos <- read_csv(paste0("www/Estados/", sort(list.files("www/Estados"))[length(list.files("www/Estados"))]))
 
 # PROCESAMIENTO DE LA INFORMACIÓN ----
 # Casos por municipio de residencia ----
@@ -135,4 +134,3 @@ mapa_edos <- function(estado, cat = "Fallecimientos"){
 mapa_edos(estado = "Hidalgo", cat = "Casos")
 mapa_edos(estado = "Chiapas", cat = "Fallecimientos")
 mapa_edos(estado = "Ciudad de México")
-
