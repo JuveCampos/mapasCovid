@@ -193,7 +193,7 @@ mapa_edos <- function(estado, cat = "Fallecimientos"){
 
 # Defunciones estados ---- 
 
-# Colima, Nayarit y Yucatán con tratamiento espcial de datos para eliminar islas (en siguiente parte del código)
+# Colima, Nayarit y Yucatán con tratamiento especial de datos para eliminar islas (en siguiente parte del código)
 
 ## Aguascalientes 
 mapa_edos(estado = "Aguascalientes", cat = "Fallecimientos")
